@@ -1,0 +1,15 @@
+//conversion 
+const objectJSON = { name : "Asad" ,
+  age : 21,
+  cg : 8.2,
+}
+//conversion from object to string .... 
+const stringJSON = JSON.stringify(objectJSON);
+console.log(stringJSON)
+//conversion from string to object ....
+const newStringObj = JSON.parse(stringJSON);
+console.log(newStringObj);
+console.log(newStringObj.name,',',newStringObj.age,',',newStringObj.cg);
+
+---------------------------------------------------------------------------
+
