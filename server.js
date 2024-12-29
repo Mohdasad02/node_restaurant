@@ -6,14 +6,14 @@ const Menu = require('./models/MenuItem.js');
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
-
+   
 app.get('/', (req, res) => {
   res.send('hellooo world');                 
 });
 
 //import router-menu files 
 const menuRoutes = require('./routes/menuRoutes.js');
-app.use('/menu',menuRoutes);
+app.use('/menu',menuRoutes);   
 
 //Import router-person files
 const personRoutes = require('./routes/personRoutes.js');
